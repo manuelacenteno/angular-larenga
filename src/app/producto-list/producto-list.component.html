@@ -1,0 +1,29 @@
+<table class="table">
+
+    <thead>
+        <th>Imagen</th>
+        <th>Producto</th>
+        <th>Tipo</th>
+        <th>Color</th>
+        <th>Precio</th>
+        <th>Stock</th>
+        <th>Cantidad</th>
+
+    </thead>
+    <tbody>
+        <tr *ngFor="let producto of productos" [ngClass]="{'clearance': producto.clearance}">
+            <td><img width="100" [src]="producto.image " [alt]="producto.name "></td>
+            <td>{{producto.product}}</td>
+            <td>{{producto.type}}</td>
+            <td>{{producto.colour}}</td>
+            <td>{{producto.price | currency}}</td>
+            <td><span class="badge badge-danger " *ngIf="producto.stock==0 "> SIN STOCK</span> {{producto.stock}}</td>
+            <td>
+                <button (click)="downQuantify(producto)">-</button>
+                <input type="text" ({ngModul})="producto.quantify"> {{producto.quantify}}
+                <button (click)="upQuantify(producto)">+</button>
+            </td>
+        </tr>
+    </tbody>
+
+</table>
