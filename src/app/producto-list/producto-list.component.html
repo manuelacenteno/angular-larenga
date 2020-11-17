@@ -12,7 +12,7 @@
     </thead>
     <tbody>
         <tr *ngFor="let producto of productos" [ngClass]="{'clearance': producto.clearance}">
-            <td><img width="100" [src]="producto.image " [alt]="producto.name "></td>
+            <td><img width="100" [src]="producto.image " [alt]="producto.product "></td>
             <td>{{producto.product}}</td>
             <td>{{producto.type}}</td>
             <td>{{producto.colour}}</td>
