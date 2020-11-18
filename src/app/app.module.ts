@@ -8,6 +8,9 @@ import { CartListComponent } from './cart-list/cart-list.component';
 import { LarengaBiographyComponent } from './larenga-biography/larenga-biography.component';
 import { LarengaHomeComponent } from './larenga-home/larenga-home.component';
 import { LarengaProductComponent } from './larenga-product/larenga-product.component';
+import { NuevomoduloRoutingModule } from './modules/nuevomodulo/nuevomodulo-routing.module';
+
+
 
 @NgModule({
   declarations: [
@@ -20,6 +23,7 @@ import { LarengaProductComponent } from './larenga-product/larenga-product.compo
   ],
   imports: [
     BrowserModule,
+    NuevomoduloRoutingModule,
     FormsModule
   ],
   providers: [],
