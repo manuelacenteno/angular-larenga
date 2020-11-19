@@ -7,7 +7,7 @@ import { LarengaProductComponent } from 'src/app/larenga-product/larenga-product
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'LarengaHomeComponent',
+    redirectTo: 'home',
     pathMatch: 'full'
 
   },
@@ -27,7 +27,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forChild(routes)],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class NuevomoduloRoutingModule { }

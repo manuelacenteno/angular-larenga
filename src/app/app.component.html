@@ -1,38 +1,53 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#"> {{title}} </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"> {{title}} </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent" class="posicion">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" [routerLink]="['/']"> Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" [routerLink]="['/biography']">Biografia</a>
-            </li>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" class="posicion">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" [routerLink]="['/']"> Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['/biography']">Biografia</a>
+                </li>
 
-            <li class="nav-item">
-                <a class="nav-link" [routerLink]="['/']">Discografia</a>
-            </li>
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['/']">Discografia</a>
+                </li>
 
-            <li class="nav-item">
-                <a class="nav-link" [routerLink]="['/']">Shows</a>
-            </li>
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['/']">Shows</a>
+                </li>
 
-            <li class="nav-item">
-                <a class="nav-link" [routerLink]="['/sales']">Ventas</a>
-            </li>
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['/sales']">Ventas</a>
+                </li>
 
-        </ul>
+            </ul>
+
+        </div>
+    </nav>
+    <div class="container">
+
+        <router-outlet></router-outlet>
 
     </div>
-</nav>
-<div class="container">
 
-    <router-outlet></router-outlet>
+    <footer>{{title}} 2020</footer>
 
-</div>
+</body>
 
-<footer>{{title}} 2020</footer>
+</html>

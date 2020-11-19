@@ -1,4 +1,4 @@
-<table class="table">
+<table class="table table-secondary">
 
     <thead>
         <th>Imagen</th>
@@ -17,7 +17,10 @@
             <td>{{producto.type}}</td>
             <td>{{producto.colour}}</td>
             <td>{{producto.price | currency}}</td>
-            <td><span class="badge badge-danger " *ngIf="producto.stock==0 "> SIN STOCK</span> {{producto.stock}}</td>
+            <td>
+                <div *ngIf="producto.stock >0; else sinStock ">{{producto.stock}}</div>
+                <ng-template #sinStock><span class="badge badge-danger "> SIN STOCK</span> </ng-template>
+            </td>
             <td>
                 <button (click)="downQuantify(producto)">-</button>
                 <input type="text" ({ngModul})="producto.quantify"> {{producto.quantify}}

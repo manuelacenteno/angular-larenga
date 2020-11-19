@@ -1,0 +1,26 @@
+.bio {
+    width: 1000px;
+    font-size: 25px;
+    /*margin: 50px 300px 100px 300px;*/
+    background: rgba(00, 00, 00, 0.5);
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 100px;
+}
+
+.integrantes {
+    display: flex;
+    justify-content: center;
+}
+
+.foto {
+    width: 250px;
+    margin: 20px 20px 0px 20px;
+}
+
+.nombre1,
+.nombre2,
+.nombre3,
+.nombre4 {
+    text-align: center;
+}
