@@ -9,6 +9,9 @@ import { LarengaBiographyComponent } from './larenga-biography/larenga-biography
 import { LarengaHomeComponent } from './larenga-home/larenga-home.component';
 import { LarengaProductComponent } from './larenga-product/larenga-product.component';
 import { NuevomoduloRoutingModule } from './modules/nuevomodulo/nuevomodulo-routing.module';
+import { InputIntegerComponent } from './input-integer/input-integer.component';
+import { LarengaDiscografiaComponent } from './larenga-discografia/larenga-discografia.component';
+import { LarengaShowsComponent } from './larenga-shows/larenga-shows.component';
 
 
 
@@ -19,7 +22,10 @@ import { NuevomoduloRoutingModule } from './modules/nuevomodulo/nuevomodulo-rout
     CartListComponent,
     LarengaBiographyComponent,
     LarengaHomeComponent,
-    LarengaProductComponent
+    LarengaProductComponent,
+    InputIntegerComponent,
+    LarengaDiscografiaComponent,
+    LarengaShowsComponent
   ],
   imports: [
     BrowserModule,

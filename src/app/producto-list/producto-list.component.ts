@@ -15,7 +15,7 @@ export class ProductoListComponent implements OnInit {
       "colour":"Bordo",
       "price":700,
       "stock": 4,
-      "quantify":0,
+      "quantity":0,
       "clearance":true,
       "image":"assets/img/remeraRoja.jpg",
     },
@@ -25,7 +25,7 @@ export class ProductoListComponent implements OnInit {
       "colour":"Bordo",
       "price":700,
       "stock": 0,
-      "quantify":0,
+      "quantity":0,
       "clearance":true,
       "image":"assets/img/remeraDamaBordo.jpg",
   },
@@ -35,7 +35,7 @@ export class ProductoListComponent implements OnInit {
       "colour":"Azul",
       "price":700,
       "stock": 4,
-      "quantify":0,
+      "quantity":0,
       "clearance":false,
       "image":"assets/img/RemeraAzul.jpg",
     },
@@ -45,7 +45,7 @@ export class ProductoListComponent implements OnInit {
       "colour":"Verde",
       "price":700,
       "stock": 4,
-      "quantify":0,
+      "quantity":0,
       "clearance":false,
       "image":"assets/img/RemeraVerde.jpg",
   },
@@ -57,14 +57,12 @@ export class ProductoListComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  downQuantify (producto: Producto) : void{
-    if (producto.quantify>0)
-    producto.quantify--;
-  }
+  maxReached(m:string){
 
-  upQuantify (producto: Producto) : void{
-    if (producto.quantify = producto.stock)
-    producto.quantify++;
+    alert(m);
+
+
   }
+ 
 
 }

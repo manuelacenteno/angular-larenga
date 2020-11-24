@@ -22,9 +22,8 @@
                 <ng-template #sinStock><span class="badge badge-danger "> SIN STOCK</span> </ng-template>
             </td>
             <td>
-                <button (click)="downQuantify(producto)">-</button>
-                <input type="text" ({ngModul})="producto.quantify"> {{producto.quantify}}
-                <button (click)="upQuantify(producto)">+</button>
+                <app-input-integer [(quantity)]="producto.quantity" [max]="producto.stock" *ngIf="producto.stock" (maxReached)="maxReached($event)"></app-input-integer>
+                Cant: {{producto.quantity}}
             </td>
         </tr>
     </tbody>

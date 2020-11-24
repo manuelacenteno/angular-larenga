@@ -1,0 +1,32 @@
+.contenedorDisco {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 50px;
+    border: none;
+}
+
+.portada img {
+    height: 300px;
+    width: 300px;
+}
+
+.portada {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    text-transform: uppercase;
+    margin-right: 20px;
+}
+
+.temas {
+    padding: 15px;
+    background-color: rgba(00, 00, 00, 0.5);
+    border: 1px solid #550000;
+    border-radius: 25px;
+    height: fit-content;
+    margin-top: 35px;
+    font-size: 20px;
+}

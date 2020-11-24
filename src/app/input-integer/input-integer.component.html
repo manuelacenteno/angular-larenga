@@ -1,0 +1,15 @@
+<div class="input-group">
+
+    <div class="input-group">
+        <div class="input-group-prepend">
+            <button (click)="downQuantity()">-</button>
+        </div>
+
+        <input type="text" class="text-center" ({ngModul})="quantity" (keyup)="changeQuantity($event)">
+
+        <div class="input-group-append">
+            <button (click)="upQuantity()">+</button>
+        </div>
+    </div>
+
+</div>

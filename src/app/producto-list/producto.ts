@@ -4,7 +4,7 @@ export interface Producto {
     colour: string;
     price: number;
     stock: number;
-    quantify: number;
+    quantity: number;
     clearance:boolean;//producto en oferta
     image:string;
   } 

@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { LarengaBiographyComponent } from 'src/app/larenga-biography/larenga-biography.component';
 import { LarengaHomeComponent } from 'src/app/larenga-home/larenga-home.component';
 import { LarengaProductComponent } from 'src/app/larenga-product/larenga-product.component';
+import {LarengaDiscografiaComponent} from 'src/app/larenga-discografia/larenga-discografia.component';
 
 const routes: Routes = [
   {
@@ -17,6 +18,10 @@ const routes: Routes = [
   },
   {
     path: 'biography',
+  component: LarengaBiographyComponent,
+  },
+  {
+    path: 'discography',
   component: LarengaBiographyComponent,
   },
   {
