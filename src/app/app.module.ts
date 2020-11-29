@@ -12,6 +12,7 @@ import { NuevomoduloRoutingModule } from './modules/nuevomodulo/nuevomodulo-rout
 import { InputIntegerComponent } from './input-integer/input-integer.component';
 import { LarengaShowsComponent } from './larenga-shows/larenga-shows.component';
 import { LarengaDiscographyComponent } from './larenga-discography/larenga-discography.component';
+import { CartComponent } from './cart/cart.component';
 
 
 
@@ -25,7 +26,8 @@ import { LarengaDiscographyComponent } from './larenga-discography/larenga-disco
     LarengaProductComponent,
     InputIntegerComponent,
     LarengaShowsComponent,
-    LarengaDiscographyComponent
+    LarengaDiscographyComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,

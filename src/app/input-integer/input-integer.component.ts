@@ -35,7 +35,7 @@ export class InputIntegerComponent implements OnInit {
   }
   
   upQuantity () : void{
-    if (this.quantity = this.max){
+    if (this.quantity < this.max){
     this.quantity++;
     this.quantityChange.emit(this.quantity);}
     else {
