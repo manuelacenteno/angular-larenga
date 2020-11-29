@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Show } from './shows';
 
 @Component({
   selector: 'app-larenga-shows',
@@ -6,6 +7,38 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./larenga-shows.component.css']
 })
 export class LarengaShowsComponent implements OnInit {
+
+  shows: Show [] = [ 
+    {
+      "site":"Buenos Aires",
+      "stadium":"",
+      "date": "27/10/2020",
+      "hour": "20:00 hs",
+      
+    },
+    {
+      "site":"Buenos Aires",
+      "stadium":"",
+      "date": "27/10/2020",
+      "hour": "20:00 hs",
+      
+  },
+    {
+      "site":"Buenos Aires",
+      "stadium":"",
+      "date": "27/10/2020",
+      "hour": "20:00 hs",
+      
+    },
+    {
+      "site":"Buenos Aires",
+      "stadium":"",
+      "date": "27/10/2020",
+      "hour": "20:00 hs",
+     
+  },
+    
+  ];
 
   constructor() { }
 

@@ -3,7 +3,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { LarengaBiographyComponent } from 'src/app/larenga-biography/larenga-biography.component';
 import { LarengaHomeComponent } from 'src/app/larenga-home/larenga-home.component';
 import { LarengaProductComponent } from 'src/app/larenga-product/larenga-product.component';
-import {LarengaDiscografiaComponent} from 'src/app/larenga-discografia/larenga-discografia.component';
+import {LarengaDiscographyComponent} from 'src/app/larenga-discography/larenga-discography.component';
+import { LarengaShowsComponent } from 'src/app/larenga-shows/larenga-shows.component';
 
 const routes: Routes = [
   {
@@ -22,11 +23,15 @@ const routes: Routes = [
   },
   {
     path: 'discography',
-  component: LarengaBiographyComponent,
+  component: LarengaDiscographyComponent,
   },
   {
     path: 'sales',
   component: LarengaProductComponent,
+  },
+  {
+    path: 'shows',
+  component: LarengaShowsComponent,
   },
 
 ];

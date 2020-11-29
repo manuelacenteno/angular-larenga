@@ -1,0 +1,25 @@
+.tabla {
+    width: 60%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    background: rgba(00, 00, 00, 0.5);
+    border: 2px solid white;
+    border-radius: 25px;
+}
+
+td,
+th {
+    border-bottom: 2px solid #550000;
+    padding: 50px 20px 50px 20px;
+}
+
+td {
+    font-size: 20px;
+}
+
+thead {
+    padding: 50px;
+    font-size: 30px;
+    color: red;
+}

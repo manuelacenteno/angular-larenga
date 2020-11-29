@@ -5,3 +5,12 @@ body {
     color: white;
     background-color: black;
 }
+
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    text-transform: uppercase;
+    align-items: flex-end;
+    margin-top: 20px;
+}
