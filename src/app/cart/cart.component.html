@@ -2,9 +2,9 @@
 <ul>
 
     <li *ngFor="let producto of cartList$ | async">
-        {{producto.product}}:{{producto.quantity}}
+        {{producto.product}} {{producto.type}}-{{producto.colour}}:{{producto.quantity}}
     </li>
 
 
 </ul>
-<button class="btn btn-danger">Comprar</button>
+<button *ngIf="(cartList$ | async)?.length>0" class="btn btn-danger">Comprar</button>

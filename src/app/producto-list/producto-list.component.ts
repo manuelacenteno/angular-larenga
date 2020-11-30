@@ -52,22 +52,27 @@ export class ProductoListComponent implements OnInit {
   },
     
   ];
-  cart: any;
+  
   
  
   
-  constructor( private producto:ProductCartService ) { 
+  constructor( 
+
+    private producto:ProductCartService ) { 
     
   }
+
+
 
   ngOnInit(): void {
   }
 
   addToCart(producto):void{
-
-    this.cart.addToCart(producto);
+  if(producto.quantity>0){
+    this.producto.addToCart(producto);
     producto.stock-= producto.quantity;
     producto.quantity=0;
+  }
   }
 
   maxReached(m:string){

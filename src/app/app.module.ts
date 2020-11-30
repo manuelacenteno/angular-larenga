@@ -4,7 +4,6 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { ProductoListComponent } from './producto-list/producto-list.component';
 import { FormsModule } from '@angular/forms';
-import { CartListComponent } from './cart-list/cart-list.component';
 import { LarengaBiographyComponent } from './larenga-biography/larenga-biography.component';
 import { LarengaHomeComponent } from './larenga-home/larenga-home.component';
 import { LarengaProductComponent } from './larenga-product/larenga-product.component';
@@ -20,7 +19,6 @@ import { CartComponent } from './cart/cart.component';
   declarations: [
     AppComponent,
     ProductoListComponent,
-    CartListComponent,
     LarengaBiographyComponent,
     LarengaHomeComponent,
     LarengaProductComponent,

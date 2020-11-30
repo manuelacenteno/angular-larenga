@@ -14,7 +14,7 @@ cartList: BehaviorSubject < Producto[] > = new BehaviorSubject ([]);
 constructor() { }
 
   addToCart(producto: Producto) {
-    let item: Producto = this._cartList.find((v1) => v1.product==producto.product);
+    let item: Producto = this._cartList.find((v1) => (v1.product==producto.product)&&(v1.product==producto.colour));
     if(!item){
       this._cartList.push({ ... producto});
     }
