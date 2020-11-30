@@ -1,25 +1,24 @@
 <h2>Conciertos</h2>
 
-<div class="centrar">
-    <div class="tabla">
-        <table>
-            <thead>
-                <tr>
-                    <th>Fecha</th>
-                    <th>Ciudad</th>
-                    <th>Estadio</th>
-                    <th>Hora</th>
-                </tr>
-            </thead>
 
-            <tbody>
-                <tr *ngFor="let show of shows">
-                    <td>{{show.site}}</td>
-                    <td>{{show.stadium}}</td>
-                    <td>{{show.date}}</td>
-                    <td>{{show.hour}}</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+<div class="tabla">
+    <table>
+        <thead>
+            <tr>
+                <th>Fecha</th>
+                <th>Ciudad</th>
+                <th>Estadio</th>
+                <th>Hora</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr *ngFor="let show of shows">
+                <td>{{show.site}}</td>
+                <td>{{show.stadium}}</td>
+                <td>{{show.date}}</td>
+                <td>{{show.hour}}</td>
+            </tr>
+        </tbody>
+    </table>
 </div>

@@ -1,10 +1,15 @@
-<h3>Carrito de Compras</h3>
-<ul>
+<div *ngIf="(cartList$ | async)?.length>0">
+    <h3 class="centrar">Compras</h3>
+    <ul>
 
-    <li *ngFor="let producto of cartList$ | async">
-        {{producto.product}} {{producto.type}}-{{producto.colour}}:{{producto.quantity}}
-    </li>
+        <li class="centrar" *ngFor="let producto of cartList$ | async">
+            {{producto.product}} {{producto.type}}-{{producto.colour}}:{{producto.quantity}}
+        </li>
 
 
-</ul>
-<button *ngIf="(cartList$ | async)?.length>0" class="btn btn-danger">Comprar</button>
+    </ul>
+
+
+    <button class="btn btn-danger">Comprar</button>
+
+</div>

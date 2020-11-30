@@ -11,7 +11,7 @@ export class ProductoListComponent implements OnInit {
 
   productos: Producto[] = [ 
     {
-      "product":"remera",
+      "product":"Remera",
       "type":"Hombre",
       "colour":"Bordo",
       "price":700,
@@ -21,7 +21,7 @@ export class ProductoListComponent implements OnInit {
       "image":"assets/img/remeraRoja.jpg",
     },
     {
-      "product":"remera",
+      "product":"Remera",
       "type":"Mujer",
       "colour":"Bordo",
       "price":700,
@@ -31,7 +31,7 @@ export class ProductoListComponent implements OnInit {
       "image":"assets/img/remeraDamaBordo.jpg",
   },
     {
-      "product":"remera",
+      "product":"Remera",
       "type":"Hombre",
       "colour":"Azul",
       "price":700,
@@ -41,7 +41,7 @@ export class ProductoListComponent implements OnInit {
       "image":"assets/img/RemeraAzul.jpg",
     },
     {
-      "product":"remera",
+      "product":"Remera",
       "type":"Hombre",
       "colour":"Verde",
       "price":700,
@@ -68,10 +68,11 @@ export class ProductoListComponent implements OnInit {
   }
 
   addToCart(producto):void{
-  if(producto.quantity>0){
+  if(producto.quantity>0){//Si es mayor a cero se agrega al carrito
     this.producto.addToCart(producto);
     producto.stock-= producto.quantity;
     producto.quantity=0;
+    
   }
   }
 

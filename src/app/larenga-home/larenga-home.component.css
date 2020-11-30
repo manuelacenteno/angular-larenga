@@ -1,0 +1,10 @@
+h1 {
+    font-size: 25px;
+    border-bottom: 1px solid white;
+}
+
+.centrar {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}

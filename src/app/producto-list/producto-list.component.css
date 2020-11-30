@@ -1,8 +1,29 @@
-body {
-    color: white;
-}
-
 .clearance {
     border: 2px solid black;
     background-color: brown;
+}
+
+.tabla {
+    width: 60%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    background: rgba(00, 00, 00, 0.5);
+    margin-left: 100px;
+}
+
+td,
+th {
+    border-bottom: 2px solid #550000;
+    padding: 25px 10px 25px 10px;
+}
+
+td {
+    font-size: 15px;
+}
+
+thead {
+    padding: 30px;
+    font-size: 15px;
+    color: red;
 }
