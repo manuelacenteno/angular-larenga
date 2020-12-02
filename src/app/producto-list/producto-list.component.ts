@@ -73,6 +73,7 @@ export class ProductoListComponent implements OnInit {
     producto.stock-= producto.quantity;
     producto.quantity=0;
     
+    
   }
   }
 
