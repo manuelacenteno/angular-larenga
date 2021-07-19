@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { tap } from 'rxjs/operators';
+import { Show } from './larenga-shows/shows';
 
 const URL = "asd";
 
@@ -12,12 +13,11 @@ export class ShowDataService {
 
   constructor(private http: HttpClient) { }
 
-  public getAll(): Observable<Shows[]> {
-    // fetch('url', {method: 'GET'})
+  public getAll(): Observable<Show[]> {
 
-    return this.http.get<Shows[]>(URL)
+    return this.http.get<Show[]>(URL)
               .pipe(
-                tap((shows: Shows[]) => shows.forEach(show => show.quantity = 0))
+                tap()
               );
   }
 }

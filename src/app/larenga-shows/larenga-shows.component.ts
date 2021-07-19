@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ShowDataService } from '../show-data.service';
 import { Show } from './shows';
 
 @Component({
@@ -41,11 +42,11 @@ export class LarengaShowsComponent implements OnInit {
   ];
 
   constructor(
-    private showsDataServce: ShowsDataService
+    private showsDataService: ShowDataService
   ) { }
 
   ngOnInit(): void {
-    this.showsDataService.getAll().subscribe(products => this.shows= shows);
+    this.showsDataService.getAll().subscribe(shows => this.shows= shows);
   }
 
 }
