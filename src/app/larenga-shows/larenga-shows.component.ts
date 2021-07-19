@@ -40,9 +40,12 @@ export class LarengaShowsComponent implements OnInit {
     
   ];
 
-  constructor() { }
+  constructor(
+    private showsDataServce: ShowsDataService
+  ) { }
 
   ngOnInit(): void {
+    this.showsDataService.getAll().subscribe(products => this.shows= shows);
   }
 
 }
