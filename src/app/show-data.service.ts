@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 import { tap } from 'rxjs/operators';
 import { Show } from './larenga-shows/shows';
 
-const URL = "asd";
+const URL = "https://60f5c8cd18254c00176e0028.mockapi.io/api/v1/shows";
 
 @Injectable({
   providedIn: 'root'

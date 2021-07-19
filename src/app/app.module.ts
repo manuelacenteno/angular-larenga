@@ -12,6 +12,7 @@ import { InputIntegerComponent } from './input-integer/input-integer.component';
 import { LarengaShowsComponent } from './larenga-shows/larenga-shows.component';
 import { LarengaDiscographyComponent } from './larenga-discography/larenga-discography.component';
 import { CartComponent } from './cart/cart.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -30,7 +31,8 @@ import { CartComponent } from './cart/cart.component';
   imports: [
     BrowserModule,
     NuevomoduloRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
